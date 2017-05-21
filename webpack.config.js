@@ -17,7 +17,12 @@ module.exports = {
     },
     resolve: {
         modulesDirectories: ['node_modules', 'src'], // Folders where Webpack is going to look for files to bundle together
-        extensions: ['', '.js'] // Extensions that Webpack is going to expect
+        extensions: ['', '.js'],  // Extensions that Webpack is going to expect
+        root: path.resolve("."),
+        alias: {
+            components: "src/components",
+            imgs: "src/imgs"
+        }
     },
     module: {
         // Loaders allow you to preprocess files as you require() or “load” them. Loaders are kind of like “tasks” in other build tools, and provide a powerful way to handle frontend build steps.
@@ -26,7 +31,30 @@ module.exports = {
                 test: /\.jsx?$/, // Here we're going to use JS for react components but including JSX in case this extension is prefered
                 exclude: /node_modules/, // Speaks for itself
                 loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015'] // Modules that help with hot reloading and ES6 transcription  
-            }
+            }, 
+            {
+                test: /\.png$/, 
+                loader: "url-loader?prefix=img/&limit=5000"
+            },
+            {
+                test: /\.jpg$/, 
+                loader: "url-loader?prefix=img/&limit=5000"
+            },
+            // {
+            //     test: /\.svg$/, loader: "file-loader?prefix=font/"
+            // },
+            // {   
+            //     test: /\.scss$/, loader: "style!css!sass?includePaths[]=" + bourbon
+            // },
+            // {
+            //     test: /\.css/, loader: `style!css`
+            // },
+            // {
+            //     test: /\.less$/, loader: `style!css!less`
+            // },
+            // {   
+            //     test: /\.json/, loader: `json-loader`
+            // }
         ]
     },
     plugins: [

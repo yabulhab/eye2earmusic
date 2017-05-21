@@ -1,6 +1,3 @@
-//for connecting to WP
-
-
 import axios from 'axios';
 import alt   from './../alt/alt.js';
 

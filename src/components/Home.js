@@ -1,5 +1,6 @@
 
 import React    from 'react';
+import logo 	from 'imgs/logo.png'
 
 class Home extends React.Component {
 
@@ -7,6 +8,7 @@ class Home extends React.Component {
         return (
             <div>
                 <h1>Hello World</h1>
+                <img src={logo}/>
             </div>
         );
     }
