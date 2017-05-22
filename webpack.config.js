@@ -21,7 +21,8 @@ module.exports = {
         root: path.resolve("."),
         alias: {
             components: "src/components",
-            imgs: "src/imgs"
+            imgs: "src/imgs",
+            styles: "src/styles"
         }
     },
     module: {
@@ -49,9 +50,9 @@ module.exports = {
             // {
             //     test: /\.css/, loader: `style!css`
             // },
-            // {
-            //     test: /\.less$/, loader: `style!css!less`
-            // },
+            {
+                test: /\.less$/, loader: `style!css!less`
+            },
             // {   
             //     test: /\.json/, loader: `json-loader`
             // }

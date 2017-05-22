@@ -1,14 +1,15 @@
 
 import React    from 'react';
-import logo 	from 'imgs/logo.png'
+import Logo 	from 'components/Logo.js'
+import SoundBarsContainer from 'components/SoundBarsContainer.js'
 
 class Home extends React.Component {
 
     render() {
         return (
             <div>
-                <h1>Hello World</h1>
-                <img src={logo}/>
+                <Logo/>
+                <SoundBarsContainer/>
             </div>
         );
     }

@@ -2,6 +2,7 @@ import React        from 'react';
 import {render}     from 'react-dom';
 import App          from './components/App.js';
 import Home         from './components/Home.js';
+import "styles/index.less"
 // import DataActions  from './actions/DataActions.js';
 
 import {
