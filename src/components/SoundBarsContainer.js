@@ -1,24 +1,60 @@
-import React    from 'react';
+import React from 'react';
 import SoundBars from 'components/SoundBars.js'
+import ReactResizeDetector from 'react-resize-detector';
+
 
 class SoundBarsContainer extends React.Component {
 
-    render() { 
-        //decides how many colums there will be
-        //get the window width
-        //use window width to figure out how many colums there should be
-        //pass that number into SoundBars
-        console.log(window.innerWidth);
-        let soundBars = [];
-        for (let i=0; i <10; i++) {
-            soundBars.push(<SoundBars/>)
-        }
-        return (
-            <div>
-                {soundBars}
-            </div>
-        );
+    constructor(props) { 
+        super(props);
+        let width = window.innerWidth;
+        this.state = {
+            barCount: Math.floor(width/55),  
+        };
     }
+    
+    render() { 
+
+        let soundBars = []; 
+        const _onResize = () => {
+            let width = window.innerWidth; 
+            this.setState({
+                barCount: Math.floor(width/55),
+            });
+        }
+
+        const getSection = (index, barCount) => {
+            let sectionSize = Math.ceil(barCount/5);
+            if (index < sectionSize || index >= (barCount - sectionSize)) {
+                console.log("outer");
+                return "outer";
+            } else if (index >= sectionSize*2 && index <= (barCount - sectionSize*2) ) {
+                console.log("middle");
+                return "middle";
+            } else {
+                console.log("notOuter")
+                return "notOuter"
+            }
+
+
+        }
+
+        for (let i=0; i<this.state.barCount; i++) {
+            let section = getSection(i, this.state.barCount);
+            soundBars.push(<SoundBars section={section}/>)
+        } 
+        return (
+            <div className="soundBarsContainer">
+                {soundBars}            
+                <ReactResizeDetector handleWidth handleHeight onResize={_onResize.bind(this)} />
+            </div>
+        );    
+
+    }
+
+    //when the window resizes, it should redefine width and barCount
+
+
 }
 
 export default SoundBarsContainer;

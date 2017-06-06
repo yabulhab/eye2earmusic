@@ -41,6 +41,19 @@ module.exports = {
                 test: /\.jpg$/, 
                 loader: "url-loader?prefix=img/&limit=5000"
             },
+            { 
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: "url-loader?limit=10000&mimetype=application/font-woff" 
+            },
+            { 
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+                loader: "file-loader" 
+            },
+            {
+                test: /\.gif$/, 
+                loader: "url-loader?prefix=img/&limit=5000"
+            },
+
             // {
             //     test: /\.svg$/, loader: "file-loader?prefix=font/"
             // },
