@@ -1,34 +1,35 @@
+@rectWidth: 55px;
+@marginRight: 1.5vw;
+@marginTop: 0.5vh;
+
 .rectangle {
-	width: 45px;
-	height: 15px;
-	margin-top: 8px;
-	margin-right: 8px;
+	height: 10px;
+	margin-top: @marginTop;
+	width: @rectWidth;
 }
 
-.orange {
-	background-color: orange;
+.bar {
+	margin-right: @marginRight;
+	display: inline-block;
 }
+
+div.bar:last-child {
+	margin-right: 0px;
+}
+
 .blue {
-	background-color: blue;
+	background-color: #2e2b94;
 }
 
 .red {
-	background-color: red;
+	background-color: #c62a5c;
 }
 
 .green {
-	background-color: green;
+	background-color: #59bda8;
 }
 
 .white {
 	background-color: white;
 }
 
-.soundBar {
-	display: inline-block;
-}
-
-.soundBarsContainer {
-	margin-left: auto;
-	margin-right: auto;
-}

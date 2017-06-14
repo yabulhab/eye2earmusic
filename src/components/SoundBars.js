@@ -1,7 +1,9 @@
-import React    from 'react';
-import Rectangle	from 'components/Rectangle.js'
+import React from 'react';
+import Rectangle from 'components/Rectangle.js'
 
 class SoundBars extends React.Component {
+
+
 
     render() {
     	let rectangles = [];
@@ -29,7 +31,7 @@ class SoundBars extends React.Component {
             }
         }
         return (
-            <div className="soundBar">
+            <div className="bar">
                 {rectangles}
             </div>
         );

@@ -8,38 +8,50 @@ class SoundBarsContainer extends React.Component {
     constructor(props) { 
         super(props);
         let width = window.innerWidth;
+        this.barWidth = 55;
+        this.barMargin = width*0.015;
         this.state = {
-            barCount: Math.floor(width/55),  
+            barCount: Math.ceil(width/(this.barWidth + this.barMargin)), 
         };
+        console.log("barCount: ", this.state.barCount);
+
     }
     
     render() { 
 
         let soundBars = []; 
         const _onResize = () => {
-            let width = window.innerWidth; 
+            let width = window.innerWidth;
+            this.barWidth = 55;
+            this.barMargin = width*0.015;
             this.setState({
-                barCount: Math.floor(width/55),
+                barCount: Math.ceil(width/(this.barWidth + this.barMargin)),
             });
+            console.log("barCount after resizing: ", this.state.barCount);
+
         }
 
         const getSection = (index, barCount) => {
             let sectionSize = Math.ceil(barCount/5);
+            console.log("section size is: " + sectionSize);
             if (index < sectionSize || index >= (barCount - sectionSize)) {
-                console.log("outer");
-                return "outer";
+                if (index === (barCount - 1)) {
+                    console.log("I'm the last one");
+                    return "outer";
+                } else {
+                    console.log("outer");
+                    return "outer";   
+                }  
             } else if (index >= sectionSize*2 && index <= (barCount - sectionSize*2) ) {
                 console.log("middle");
                 return "middle";
             } else {
-                console.log("notOuter")
-                return "notOuter"
+                console.log("notOuter");
+                return "notOuter";
             }
-
-
         }
 
-        for (let i=0; i<this.state.barCount; i++) {
+        for (let i=0; i<this.state.barCount-1; i++) {
             let section = getSection(i, this.state.barCount);
             soundBars.push(<SoundBars section={section}/>)
         } 
