@@ -9,9 +9,8 @@ class SoundBarsContainer extends React.Component {
         super(props);
         let width = window.innerWidth;
         this.barWidth = 55;
-        this.barMargin = width*0.015;
         this.state = {
-            barCount: Math.ceil(width/(this.barWidth + this.barMargin)), 
+            barCount: Math.ceil(width/this.barWidth), 
         };
         console.log("barCount: ", this.state.barCount);
 
@@ -23,9 +22,8 @@ class SoundBarsContainer extends React.Component {
         const _onResize = () => {
             let width = window.innerWidth;
             this.barWidth = 55;
-            this.barMargin = width*0.015;
             this.setState({
-                barCount: Math.ceil(width/(this.barWidth + this.barMargin)),
+                barCount: Math.ceil(width/this.barWidth),
             });
             console.log("barCount after resizing: ", this.state.barCount);
 

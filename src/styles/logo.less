@@ -1,7 +1,19 @@
+@smartphones: ~"only screen and (max-width: 479px)";
+@tablets: ~"only screen and (max-width: 768px)";
+
 #logo {
-	width: 500px;
+	width: 50vw;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20vh;
+
+	@media @smartphones {
+		width: 65vw;
+	}
+
+	@media @tablets {
+		width: 75vw;
+	}
 }
+
