@@ -20,7 +20,7 @@ class ContactForm extends React.Component {
 				    	<textarea form="contactForm" type="textarea" name ="textarea">Enter text here...</textarea>
 				    </div>
 				    <div>
-				    	<input type="submit" value="Send"/>
+				    	<input className="pinkBtn" type="submit" value="Send"/>
 				    </div>
 				</form>
 			</div>
