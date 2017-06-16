@@ -17,7 +17,7 @@ class ContactForm extends React.Component {
 				    </div>
 				    <div>
 				    	<label for="textarea">your message to us</label>
-				    	<textarea form="contactForm" type="textarea" name ="textarea">Enter text here...</textarea>
+				    	<textarea form="contactForm" type="textarea" name ="textarea" placeholder="Enter your text here..."></textarea>
 				    </div>
 				    <div>
 				    	<input className="pinkBtn" type="submit" value="Send"/>
