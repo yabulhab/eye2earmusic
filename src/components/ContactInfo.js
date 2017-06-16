@@ -6,9 +6,6 @@ class ContactInfo extends React.Component {
 
 		return (
 			<div className="contactInfo">
-				<h1>
-					Contact Info
-				</h1>
 				<p>
 					eye2earmusic<br/>
 					55 5th Avenue, 14th Floor<br/>

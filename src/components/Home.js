@@ -5,6 +5,7 @@ import SoundBarsContainer from 'components/SoundBarsContainer.js'
 import Slider from 'components/Slider.js'
 import Footer       from 'components/Footer.js';
 import ContactInfo	from 'components/ContactInfo.js'
+import ContactForm  from 'components/ContactForm.js'
 
 
 
@@ -18,6 +19,7 @@ class Home extends React.Component {
 	                <SoundBarsContainer/>
                 </div>
                 <Slider/>
+                <ContactForm/>
                 <ContactInfo/>
                 <Footer/>
             </div>

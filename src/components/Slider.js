@@ -15,7 +15,7 @@ class Slider extends React.Component {
         arrows: true,
         accessibility: true,
         responsive: [
-            { breakpoint:468, settings:{slidesToShow:3} },
+            { breakpoint:479, settings:{slidesToShow:3} },
             { breakpoint:585, settings:{slidesToShow:4} }, 
             { breakpoint:710, settings:{slidesToShow:5} }, 
             { breakpoint:842, settings:{slidesToShow:6} }, 
