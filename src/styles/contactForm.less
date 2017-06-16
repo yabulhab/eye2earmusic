@@ -3,10 +3,12 @@ form {
 	margin: 0 auto;
 	margin-top: 15vh;
 	width: 35vw;
+	color: @gray;
 
 	& h2 {
 		text-align: center;
-		text-transform: uppercase;		
+		text-transform: uppercase;
+		color: @gray;		
 	}
 	
 	label {
@@ -25,15 +27,17 @@ form {
 
 	input {
 		min-height: 30px;		
-		border: solid;
-		border-width: 1px;
-		border-color: gray;
-
 	}
 
 	textarea {
 		min-height: 200px;
 
+	}
+
+	input, textarea {
+		border: solid;
+		border-width: 1px;
+		border-color: @gray;
 	}
 
 	& div {
@@ -42,6 +46,7 @@ form {
 
 	& .pinkBtn {
 		width: 100%;
+		padding: 5px;
 		color: @red;
 		background-color: white;
 		text-decoration: none;
@@ -51,7 +56,6 @@ form {
 		border-color: @red;
 		font-size: 1.2em;
 		text-transform: uppercase;		
-
 	}
 	
 	& .pinkBtn:hover {
