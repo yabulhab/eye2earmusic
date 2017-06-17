@@ -11,6 +11,7 @@ module.exports = {
         'webpack/hot/only-dev-server', // Enable hot reloading
         './src/index' // This is where Webpack will be looking for the entry index.js file
     ],
+    target: 'web',
     output: {
         path: path.join(__dirname, 'public'), // This is used to specify folder for producion bundle. Will not be used here, but it's a good practice to have it 
         filename: 'bundle.js' // Filename for production bundle
