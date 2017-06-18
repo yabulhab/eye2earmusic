@@ -13,7 +13,7 @@ module.exports = {
     ],
     target: 'web',
     output: {
-        path: path.join(__dirname, 'public'), // This is used to specify folder for producion bundle. Will not be used here, but it's a good practice to have it 
+        path: path.join(__dirname, 'build'), // This is used to specify folder for producion bundle. Will not be used here, but it's a good practice to have it 
         filename: 'bundle.js' // Filename for production bundle
     },
     resolve: {
