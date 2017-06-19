@@ -8,15 +8,15 @@ class ContactForm extends React.Component {
 				<form id="contactForm" action="https://formspree.io/yabulhab@gmail.com" method="POST">
 					<h2>Send Us A Message</h2>
 					<div>
-					   	<label for="name">your name</label>
+					   	<label htmlFor="name">your name</label>
 				   		<input type="text" name="name"/>
 				   	</div>
 				   	<div>
-				   		<label for="_replyto">your email</label>
+				   		<label htmlFor="_replyto">your email</label>
 				    	<input type="email" name="_replyto"/>
 				    </div>
 				    <div>
-				    	<label for="textarea">your message to us</label>
+				    	<label htmlFor="textarea">your message to us</label>
 				    	<textarea form="contactForm" type="textarea" name ="textarea" placeholder="Enter your text here..."></textarea>
 				    </div>
 				    <div>
