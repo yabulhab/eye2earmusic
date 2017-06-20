@@ -29,8 +29,8 @@ class Slider extends React.Component {
 
     return (
       <SimpleSlider {...sliderSettings}>
-        <div><img src="/src/imgs/sized/12years.jpg"/></div>
-        <div><img src="eye2earmusic/src/imgs/sized/juliet.jpg"/></div>
+        <div><img src="./src/imgs/sized/12years.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/juliet.jpg"/></div>
         <div><img src="src/imgs/sized/mercy.jpg"/></div>
         <div><img src="src/imgs/sized/red.jpg"/></div>
         <div><img src="src/imgs/sized/runaways.jpg"/></div>
