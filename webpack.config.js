@@ -7,7 +7,7 @@ module.exports = {
         historyApiFallback: true, // This will make the server understand "/some-link" routs instead of "/#/some-link"
     },
     entry: [
-        'webpack-dev-server/https://yabulhab.github.io/', // Specify the local server port
+        'webpack-dev-server/https://yabulhab.github.io/eye2earmusic/', // Specify the local server port
         'webpack/hot/only-dev-server', // Enable hot reloading
         './src/index' // This is where Webpack will be looking for the entry index.js file
     ],
