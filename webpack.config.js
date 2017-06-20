@@ -7,7 +7,7 @@ module.exports = {
         historyApiFallback: true, // This will make the server understand "/some-link" routs instead of "/#/some-link"
     },
     entry: [
-        'webpack-dev-server/client?http://127.0.0.1:8080/', // Specify the local server port
+        'webpack-dev-server/client?https://127.0.0.1:8080/', // Specify the local server port
         'webpack/hot/only-dev-server', // Enable hot reloading
         './src/index' // This is where Webpack will be looking for the entry index.js file
     ],
@@ -21,9 +21,9 @@ module.exports = {
         extensions: ['', '.js'],  // Extensions that Webpack is going to expect
         root: path.resolve("."),
         alias: {
-            components: "src/components",
-            imgs: "src/imgs",
-            styles: "src/styles"
+            components: "./src/components",
+            imgs: "./src/imgs",
+            styles: "./src/styles"
         }
     },
     module: {
