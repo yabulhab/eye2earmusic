@@ -29,21 +29,21 @@ class Slider extends React.Component {
 
     return (
       <SimpleSlider {...sliderSettings}>
-        <div><img src="./src/imgs/sized/12years.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/12years.jpg"/></div>
         <div><img src="/eye2earmusic/src/imgs/sized/juliet.jpg"/></div>
-        <div><img src="src/imgs/sized/mercy.jpg"/></div>
-        <div><img src="src/imgs/sized/red.jpg"/></div>
-        <div><img src="src/imgs/sized/runaways.jpg"/></div>
-        <div><img src="src/imgs/sized/stepup.jpg"/></div>
-        <div><img src="src/imgs/sized/treeoflife.jpg"/></div>
-        <div><img src="src/imgs/sized/twilight1.jpg"/></div>      
-        <div><img src="src/imgs/sized/twilight2.jpg"/></div>      
-        <div><img src="src/imgs/sized/twilight3.jpg"/></div>
-        <div><img src="src/imgs/sized/twilight4.jpg"/></div>
-        <div><img src="src/imgs/sized/twilight5.jpg"/></div>
-        <div><img src="src/imgs/sized/twilight6.jpg"/></div>
-        <div><img src="src/imgs/sized/waitingsuperman.jpg"/></div>
-        <div><img src="src/imgs/sized/wallflower.jpg"/></div>
+        <div><img src="/eye2earmusic/imgs/sized/mercy.jpg"/></div>
+        <div><img src="/eye2earmusic/imgs/sized/red.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/runaways.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/stepup.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/treeoflife.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/twilight1.jpg"/></div>      
+        <div><img src="/eye2earmusic/src/imgs/sized/twilight2.jpg"/></div>      
+        <div><img src="/eye2earmusic/src/imgs/sized/twilight3.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/twilight4.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/twilight5.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/twilight6.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/waitingsuperman.jpg"/></div>
+        <div><img src="/eye2earmusic/src/imgs/sized/wallflower.jpg"/></div>
 
        
       </SimpleSlider>
