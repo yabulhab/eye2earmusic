@@ -15,6 +15,8 @@ class ContactInfo extends React.Component {
 					<br/>
 					<br/>
 					212.645.8070
+					<br>
+					test
 				</p>
 			</div>
 		)
