@@ -20,7 +20,7 @@ class AppInitializer {
         // DataActions.getPages((response)=>{
             render(
                 <Router history={browserHistory}>
-                    <Route path="/" component={ App } >
+                    <Route path="/"  component={ App } >
                         <IndexRoute component={ Home } />
                     </Route>
                     <Redirect from="*" to="/" />
