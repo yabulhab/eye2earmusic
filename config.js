@@ -7,9 +7,8 @@ console.log("hostname is " + hostname);
 if (hostname === "https://yabulhab.github.io/eye2earmusic/") {
 	window._ROOT_FILE_PATH_ = "/eye2earmusic";
 } else if (hostname === "localhost") {
-	console.log("LOOK HERE!");
 	window._ROOT_FILE_PATH_ = ".";
-	console.log(window._ROOT_FILE_PATH_);
+
 } else {
 	console.log("I'm confused. Where are we?");
 }
