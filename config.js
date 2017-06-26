@@ -11,5 +11,6 @@ if (hostname === "yabulhab.github.io") {
 	window._ROOT_FILE_PATH_ = ".";
 
 } else {
+	window._ROOT_FILE_PATH_ = "/eye2earmusic";
 	console.log("I'm confused. Where are we?");
 }
