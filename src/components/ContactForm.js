@@ -5,7 +5,7 @@ class ContactForm extends React.Component {
 	render() {
 		return(
 			<div>
-				<form id="contactForm" action="https://formspree.io/yabulhab@gmail.com" method="POST">
+				<form id="contactForm" action="https://formspree.io/holly@entertainimpact.com" method="POST">
 					<h2>Send Us A Message</h2>
 					<div>
 					   	<label htmlFor="name">your name</label>
