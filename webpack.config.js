@@ -21,9 +21,10 @@ module.exports = {
         extensions: ['', '.js'],  // Extensions that Webpack is going to expect
         root: path.resolve("."),
         alias: {
-            components: "src/components",
-            imgs: "src/imgs",
-            styles: "src/styles"
+            components: path.resolve(__dirname, "src/components"),
+            imgs: path.resolve(__dirname, "src/imgs"),
+            sized_imgs: path.resolve(__dirname, "src/imgs/sized"),
+            styles: path.resolve(__dirname, "src/styles")
         }
     },
     module: {
