@@ -24,7 +24,8 @@ module.exports = {
             components: path.resolve(__dirname, "src/components"),
             imgs: path.resolve(__dirname, "src/imgs"),
             sized_imgs: path.resolve(__dirname, "src/imgs/sized"),
-            styles: path.resolve(__dirname, "src/styles")
+            styles: path.resolve(__dirname, "src/styles"),
+            fonts: path.resolve(__dirname, "src/fonts")
         }
     },
     module: {
@@ -56,7 +57,8 @@ module.exports = {
                 loader: "url-loader?prefix=img/&limit=5000"
             },
             {
-                test: /\.less$/, loader: `style!css!less`
+                test: /\.less$/,
+                loader: `style!css!less`
             }
         ]
     },
